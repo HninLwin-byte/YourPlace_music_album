@@ -1,0 +1,50 @@
+.nav-link{
+    text-decoration: #f6bd60;
+    font-weight: 500;
+}
+.nav-item{
+    padding-left: 20px;
+}
+.navbar-brand{
+    color: floralwhite;
+    font-weight: 600;
+}
+.jumbotron {
+   padding: 70px 30px 70px 30px;
+   margin: 0px auto;
+   background:#bc9ec1;
+   color: floralwhite;
+
+
+}
+.carousel{
+    background: #bc9ec1;
+    width: 100%;
+    padding-top: 0;
+}
+
+.carousel-item{
+    height:300px;
+    width: max-content;
+
+}
+
+.carousel-item img{
+    position : absolute;
+    top:0;
+    left:0;
+    min-height: 300px;
+}
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.banner{
+    background-color: #f6bd60;
+}
+.list-group{
+
+    margin-top: 50px;
+}

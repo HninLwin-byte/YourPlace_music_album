@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #84a59d;">
+        <a class="navbar-brand" href="#">YourPlace</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">YourDatabase</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="get" id="searchForm">
+            <input class="form-control mr-sm-2" id ="searchinput" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="searchSite()">Search</button>
+          </form>
+        </div>
+      </nav>
+    <header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6 text-dark">
+                <h1>YourPlace</h1>
+                <p>Offers you a good taste of music. You can come to us and enjoy the music we offer</p>
+            </div>  
+            
+            <div class="col-xs-12 col-sm-2 ">    
+                <p style="padding:20px; "></p>
+                
+                <a type="button" class="btn btn-warning btn-block  "
+                        data-toggle="modal" data-target=""
+                    data-html="true" 
+                    
+                    data-placement="bottom"
+                    href="" id="reserve_button" > Special Items </a>
+                
+            </div>
+            
+        </div>
+    </div>
+   </header>
+      
+  <div class="container">
+    <div class="row row-content">
+        <div class="col">
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                      <img  class="d-block img-fluid" src="photos/photos.jpg" alt="uthappizza">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2 class="mt-0">All types of Music </h2>
+                        <p class="d-none d-lg-block">This website is dedicated for Kpopers. You are warmly welcome to my website </p>
+                      </div>
+
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block img-fluid" src="photos/EXO.jpg" alt="buffet">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h1>EXO</h1>
+                
+                    <p class="d-none d-lg-block">Exo (Korean: 엑소; stylized in all caps) is a South Korean-Chinese boy band based in Seoul, consisting of nine members: Xiumin, Suho, Lay, Baekhyun, Chen, Chanyeol, D.O., Kai and Sehun. The band was formed by SM Entertainment in 2011 and debuted in 2012. Their music—released and performed in Korean, Mandarin, and Japanese—primarily incorporates pop, hip-hop, and R&B, including elements of electronic dance music genres such as house and trap. The band ranked as one of the top five most influential celebrities on the Forbes Korea Power Celebrity list from 2014 to 2018 and have been labeled "Kings of K-pop" and the "Biggest boyband in the world" by various media outlets.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                      <img class="d-block img-fluid" src="photos/NCT.jpg" alt="">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h2 class="mt-0">NCT</h2>
+                        <h4>Kpop</h4>
+                        <p class="d-none d-lg-block">NCT (Korean: 엔시티; an acronym for Neo Culture Technology)[3] is a South Korean boy band formed by SM Entertainment and introduced in January 2016. The group consists of 23 members as of April 2021, ranging in age from late teens to mid-twenties and divided into four different sub-units.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block img-fluid" src="photos/BP.jpg" alt="buffet">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h1>BLACK PINK</h1>
+                
+                    <p class="d-none d-lg-block">Blackpink (Korean: 블랙핑크; commonly stylized as BLACKPINK or BLΛƆKPIИK) is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa. The group debuted in August 2016 with their single album Square One, which featured "Whistle" and "Boombayah", their first number-one entries on South Korea's Gaon Digital Chart and the Billboard World Digital Song Sales chart, respectively.</p>
+                    </div>
+                  </div>
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data--target="#mycarousel" data-slide-to="1"></li>
+                <li data--target="#mycarousel" data-slide-to="2"></li>
+    
+              </ol>
+            <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+    
+            </a>
+            
+            <button class="btn btn-danger btn-sm" id="carouselButton">
+                <span id ="carousel-button-icon" class="fa fa-pause"></span>
+            </button>
+                
+            
+            </div>
+
+        </div>
+    </div>
+      
+
+    <ul class="list-group">
+      <li class="list-group-item"><h1>Popular Songs</h1></li>
+    
+      
+      <li class="list-group-item list-group-item-primary"><a href="https://www.youtube.com/watch?v=2IkoKhr6Tss"> Don't fight the feeling(EXO)</a></li>
+      <li class="list-group-item list-group-item-secondary"><a href="https://www.youtube.com/watch?v=IdssuxDdqKk">KOKO BOP(EXO)</a></li>
+      <li class="list-group-item list-group-item-success"><a href="https://www.youtube.com/watch?v=uxmP4b2a0uY">OBESSION(EXO)</a></li>
+      <li class="list-group-item list-group-item-danger"><a href="https://www.youtube.com/watch?v=2OvyA2__Eas">Kick it(NCT)</a></li>
+      <li class="list-group-item list-group-item-warning"><a href="https://www.youtube.com/watch?v=nAvjYapdSxk">Beautiful(NCT)</a></li>
+      <li class="list-group-item list-group-item-info"><a href="https://www.youtube.com/watch?v=GUdnTGnm6Yk">Peaches(KAI)</a></li>
+      <li class="list-group-item list-group-item-light"><a href="https://www.youtube.com/watch?v=ioNng23DkIM">How You Like That(BLACK PINK) </a></li>
+      <li class="list-group-item list-group-item-dark"><a href="https://www.youtube.com/watch?v=dNCWe_6HAM8">Money(Lisa)</a></li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
